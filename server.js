@@ -28,9 +28,9 @@ app.use(express.json());
 
 app.get('/', (req,res)=> {
 	
-	postgresDB.select('*').from('users').then(data => {res.json(data)});
+	//postgresDB.select('*').from('users').then(data => {res.json(data)});
 	
-	//res.send('this is working');
+	res.send('this is working on heroku!');
 	//res.send(database.users);
 })
 
